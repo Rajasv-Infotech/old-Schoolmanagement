@@ -1,0 +1,17 @@
+Rajasv School Management - v2.0.1 compile fix
+================================================
+
+Fix:
+- UI\Controls\FeeSetupControl.cs me `using System.Drawing;` add kiya gaya.
+- Isse CS0246: `Point` could not be found error resolve hota hai.
+
+Visual Studio me:
+1. Solution close karke dobara open karein.
+2. Build > Clean Solution.
+3. Solution Explorer me solution par right-click > Restore NuGet Packages.
+4. Build > Rebuild Solution.
+
+Agar purana cached error rahe:
+- Visual Studio close karein.
+- Project ke `.vs`, `bin` aur `obj` folders delete karein.
+- Solution reopen karke Rebuild karein.

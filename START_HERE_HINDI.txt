@@ -1,0 +1,24 @@
+RAJASV SCHOOL MANAGEMENT - START HERE
+
+1) Visual Studio 2022 Community install karein.
+   Workload: .NET desktop development
+   Targeting pack: .NET Framework 4.8
+
+2) NSIS 3.x install karein.
+
+3) RajasvSchoolManagement.sln open karke Release / Any CPU build karein.
+
+4) 1-Download-Prerequisites.cmd run karein.
+
+5) 2-Build-Setup.cmd run karein.
+
+6) Final client file yahan milegi:
+   artifacts\installer\RajasvSchoolSetup.exe
+
+7) Detailed guide:
+   Docs\SETUP_GUIDE_HINDI.md
+
+IMPORTANT:
+- Client ko sirf RajasvSchoolSetup.exe deni hai.
+- Windows 7 ho to SP1 aur required Microsoft updates hone chahiye.
+- Production data se pehle clean Windows PC/VM par full test zaroor karein.

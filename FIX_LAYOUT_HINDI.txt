@@ -1,0 +1,22 @@
+Rajasv School Management - v2.0.2 layout fix
+
+Problem:
+Har page ka left/start content sidebar ke neeche chhup raha tha. Dashboard ka
+"Active Students" card, page headings, Refresh button aur grids ka first column
+visible nahi ho raha tha.
+
+Root cause:
+MainForm.cs me sidebar (DockStyle.Left) aur content (DockStyle.Fill) direct Form
+par aise add hue the ki WinForms Dock/z-order ke karan content panel poori width
+le raha tha aur sidebar uske upar draw ho raha tha.
+
+Fix:
+MainForm ko explicit 2-column TableLayoutPanel me convert kiya gaya:
+- Column 1: fixed 215 px sidebar
+- Column 2: header + page content
+- Bottom row: status bar
+
+Ab content sidebar ke neeche nahi jaata aur har page ka first content visible hai.
+
+Existing project me sirf UI\MainForm.cs replace karke Clean + Rebuild bhi kar
+sakte hain. Full v2.0.2 project me CS0246 Point fix bhi included hai.
